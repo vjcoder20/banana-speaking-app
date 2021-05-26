@@ -4,10 +4,11 @@
 
 var buttontranslate = document.querySelector("#btn-translate")
 var textinput = document.querySelector("#txt-input")
- 
-buttontranslate.addEventListener("click", function clickEventHandler() {
-    console.log("clicked")
-    console.log("input",textinput.value)
-})
+var outputdiv = document.querySelector("#output");
+
+ function clickEventHandler (){
+     outputdiv.innerText = "askdksadaldaka " + textinput.value;
+ }
+buttontranslate.addEventListener("click", clickEventHandler)
 
 
