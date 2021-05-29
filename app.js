@@ -1,7 +1,3 @@
-// var username = prompt("Give me username") -->input
-// var welcomemessage = "This script works" + username -->processing
-//alert(welcomemessage) -->output
-
 var buttontranslate = document.querySelector("#btn-translate")
 var textinput = document.querySelector("#txt-input")
 var outputdiv = document.querySelector("#output");
@@ -19,10 +15,8 @@ var outputdiv = document.querySelector("#output");
      .then(response => response.json())     //Processing done by server
      .then(json => {
          var translatedtext = json.contents.translated;
-         outputdiv.innerText = translatedtext;       //output
+         outputdiv.innerText = translatedtext;
      })
-    //  .catch(errorhandler)
+    .catch(errorhandler)
  }
 buttontranslate.addEventListener("click", clickEventHandler)
-
-

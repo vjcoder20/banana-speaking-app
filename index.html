@@ -1,38 +1,29 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Banana Speak</title>
-    </head>
-    <body>
-            <h1>Talk Banana</h1>
-        <style>
-            textarea{
-                width: 80%;
-                height: 10vh;
-                display: block;
-                margin: 1rem;
-                padding: 1rem;
-            }
-            button{
-                margin-top: 1rem;
-                font-weight: bold;
-                font-size: medium;
-            }
-            #output{
-                border: 1px solid black;
-                width: 80%;
-                height: 10vh;
-                margin: 1rem;
-                padding: 1rem;
-            }
-        </style>
-        <textarea id = "txt-input" placeholder="Put your text here in english and we will convert it to banana"></textarea>
-        <button id = "btn-translate">Translate</button>
-        <div style = "font-size: larger; padding: 1rem 0em;">Output will come here 👇</div>
-        <div id = "output"></div>
-<script src = "app.js" type="text/javascript"></script>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Translator</title>
+    <link href="/style.css" rel="stylesheet" />
+</head>
+
+<body>
+   
+    <div class="container container-center">
+        <header class="hero">
+            <img class="hero-img" src="/minion.png" />
+            <h1 class="hero-heading">Banana <span class="heading-inverted"> Translator</span></h1>
+        </header>
+
+        <div class="justify">
+            <textarea id="txt-input" placeholder="Enter your text to translate"></textarea>
+        </div>
+        <button class="link link-primary" id="btn-translate">Translate</button>
+        <div id="output">Output of the translation</div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
